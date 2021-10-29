@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class checkMark here.
+ * Gets image and resizes it.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Tanya Gu 
+ * @version Oct 27 2021
  */
 public class CheckMark extends Actor
 {

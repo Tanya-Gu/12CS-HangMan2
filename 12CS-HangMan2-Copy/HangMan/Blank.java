@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
- * Description
+ * Gets image and resizes it.
  * 
- * @Tanya Gu
- * @Oct 27 2021
+ * @author Tanya Gu
+ * @version Oct 27 2021
  */
 public class Blank extends Actor
 {

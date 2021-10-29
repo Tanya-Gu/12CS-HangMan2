@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GameWorld
-comment0.text=\r\n\ This\ is\ the\ game\ page\ of\ the\ game,\ including\ a\ user\ input\ space,\ score,\ level,\ timer\ ...\r\n\ \r\n\ @Tanya\ Gu\r\n\ @Oct\ 28\ 2021\r\n
+comment0.text=\r\n\ This\ is\ the\ game\ page\ of\ the\ game,\ including\ a\ user\ input\ space,\ score,\ level,\ timer\ ...\r\n\ \r\n\ @author\ Tanya\ Gu\r\n\ @version\ Oct\ 28\ 2021\r\n
 comment1.params=
 comment1.target=GameWorld()
 comment1.text=\r\n\ Constructor\ for\ the\ Start\ World,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n\ \r\n
@@ -12,10 +12,10 @@ comment2.target=void\ prepare()
 comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ game\ page\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
 comment3.params=
 comment3.target=void\ act()
-comment3.text=\r\n\ \r\n\ \r\n
+comment3.text=\r\n\ Starts\ music\r\n\ Changes\ music\ depending\ on\ level\r\n\ Changes\ music\ if\ the\ player\ wins\r\n\ Creates\ new\ WinningWorld\ if\ the\ player\ wins\r\n
 comment4.params=
 comment4.target=void\ timeCountDown()
-comment4.text=\r\n\ \r\n\ \r\n
+comment4.text=\r\n\ Counts\ down\ time\ for\ every\ level\r\n\ If\ player\ loses\ (runs\ out\ of\ time),\ creates\ new\ LoseWorld\r\n\ Changes\ music\ if\ player\ loses.\r\n
 comment5.params=
 comment5.target=void\ readInput()
 comment5.text=\r\n\ \r\n\ \r\n

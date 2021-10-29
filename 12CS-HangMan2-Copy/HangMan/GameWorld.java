@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * This is the game page of the game, including a user input space, score, level, timer ...
  * 
- * @Tanya Gu
- * @Oct 28 2021
+ * @author Tanya Gu
+ * @version Oct 28 2021
  */
 public class GameWorld extends World
 {
@@ -73,8 +73,10 @@ public class GameWorld extends World
     
     
     /**
-     * 
-     * 
+     * Starts music
+     * Changes music depending on level
+     * Changes music if the player wins
+     * Creates new WinningWorld if the player wins
      */
     public void act()
     {    
@@ -97,8 +99,9 @@ public class GameWorld extends World
     }
     
     /**
-     * 
-     * 
+     * Counts down time for every level
+     * If player loses (runs out of time), creates new LoseWorld
+     * Changes music if player loses.
      */
     public void timeCountDown()
     {    

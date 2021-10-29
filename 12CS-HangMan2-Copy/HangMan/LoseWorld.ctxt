@@ -1,13 +1,16 @@
 #BlueJ class context
 comment0.target=LoseWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ EndWorld\ here.\r\n\ \r\n\ Tanya\ Gu\ \r\n\ Oct\ 26\ 2021\r\n
+comment0.text=\r\n\ World\ that\ is\ made\ if\ the\ user\ loses\ the\ game\r\n\ (Does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
 comment1.params=
 comment1.target=LoseWorld()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ EndWorld.\r\n\ \r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LoseWorld.\r\n\ Adds\ all\ the\ objects\ upon\ creating\ a\ new\ world.\r\n
 comment2.params=
 comment2.target=void\ prepare()
 comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ game\ page\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
 comment3.params=
 comment3.target=void\ act()
-comment3.text=\r\n\ \r\n\ \r\n
-numComments=4
+comment3.text=\r\n\ Ends\ the\ game\ after\ a\ certain\ amount\ of\ time\r\n\ Checks\ if\ user\ clicked\ on\ the\ credit\ button\r\n
+comment4.params=
+comment4.target=void\ showCredit()
+comment4.text=\r\n\ If\ the\ user\ clicks\ on\ the\ credit\ button,\ it\ will\ take\ them\r\n\ to\ the\ credit\ screen\r\n
+numComments=5

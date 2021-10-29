@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Lightning here.
+ * Gets image and resizes it.
+ * Changes image to make it disappear and reappear
+ * (as if it is actually a flash of lightning);
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Tanya Gu 
+ * @version Oct 27 2021
  */
 public class Lightning extends Actor
 {

@@ -4,8 +4,8 @@ import java.util.Stack;
 /**
  * This is the start page of the game, including a lighning animation, a proceed button, a instructions tab and a music control button.
  * 
- * @Tanya Gu
- * @Oct 27 2021
+ * @author Tanya Gu
+ * @version Oct 27 2021
  */
 public class StartWorld extends World
 {
@@ -75,8 +75,8 @@ public class StartWorld extends World
     }
     
     /**
-     * 
-     * 
+     * Plays music
+     * Checks if user has clicked the proceed button or the instructions button
      */
     public void act()
     {    
@@ -86,8 +86,8 @@ public class StartWorld extends World
     }
     
     /**
-     * 
-     * 
+     * Plays music upon creating the world
+     * If user clicks the music button, music will stop playing
      */
     public void playMusic()
     {    
@@ -111,8 +111,8 @@ public class StartWorld extends World
     }
     
     /**
-     * 
-     * 
+     * Checks if user has clicked proceed
+     * If so, start the game and initialize a new GameWorld
      */
     public void proceedGame()
     {    
@@ -122,8 +122,8 @@ public class StartWorld extends World
     }
     
     /**
-     * 
-     * 
+     * Checks if user has clicked the instructions button
+     * If so, create a new InstructionWorld
      */
     public void showInstruction()
     {    
