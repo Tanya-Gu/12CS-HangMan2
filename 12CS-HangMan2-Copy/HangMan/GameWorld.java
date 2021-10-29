@@ -30,7 +30,7 @@ public class GameWorld extends World
     public GameWorld()
     {    
         // Create a new world with 550x400 cells with a cell size of 1x1 pixels.
-        super(550, 400, 1); 
+        super(600, 400, 1); 
         prepare();
     }
     
@@ -63,7 +63,7 @@ public class GameWorld extends World
         addObject(blank, 375, 165);
         Label defLabel = new Label(StartWorld.stackDefList.pop(),20);
         addObject(defLabel,200,300);
-        Label hint = new Label("\u2665 Hint: The length of the word is " + word.length() + " long",20);
+        Label hint = new Label("\u2665 Hint: The length of the word is " + word.length() + " letters long",20);
         addObject(hint,365,350);
         
         scoreLabel = new Label("Score " + score + " / " + word.length(),30);
@@ -221,7 +221,7 @@ public class GameWorld extends World
         
         StartWorld.lv++; //upgrade level
         health = 10;
-        StartWorld.time -= 10;
+        StartWorld.time -= 20;
         timeCount.setValue(StartWorld.time); 
         
         Greenfoot.delay(15);
