@@ -61,7 +61,7 @@ public class GameWorld extends World
         
                 
         word = StartWorld.stackList.pop();
-        addObject(blank, 400, 180);
+        addObject(blank, 410, 180);
         Label defLabel = new Label(StartWorld.stackDefList.pop(),20);
         addObject(defLabel,400,320);
         Label hint = new Label("\u2665 Hint: The length of the word is " + word.length() + " letters long",20);
@@ -154,10 +154,10 @@ public class GameWorld extends World
         if (inputLabel != null) {
             removeObject(inputLabel);
             inputLabel = new Label(userInput,50);
-            addObject(inputLabel,390,175);//display user input on screen
+            addObject(inputLabel,410,175);//display user input on screen
         } else {
             inputLabel = new Label(userInput,50);
-            addObject(inputLabel,390,175);//display user input on screen
+            addObject(inputLabel,410,175);//display user input on screen
         }
     }
     
