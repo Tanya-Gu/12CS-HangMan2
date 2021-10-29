@@ -22,6 +22,7 @@ public class GameWorld extends World
     Blank blank = new Blank();
     String userInput;
     int score = 0;
+    int totalScore = 0;
     CheckMark checkMark;
     /**
      * Constructor for the Start World, initializes objects and adds them to the world.
@@ -30,7 +31,7 @@ public class GameWorld extends World
     public GameWorld()
     {    
         // Create a new world with 550x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(640, 480, 1); 
         prepare();
     }
     
@@ -42,8 +43,8 @@ public class GameWorld extends World
     {
         GreenfootImage gameSidePic = new GreenfootImage("gameSidePic.jpg");//the image that is drawed;
         gameSidePic.scale(gameSidePic.getWidth() - 400, gameSidePic.getHeight() - 400);
-        getBackground().drawImage(gameSidePic,-100, 35);
-        
+        getBackground().drawImage(gameSidePic,-100, 60);
+
         if(checkMark!=null) {
             removeObject(checkMark);
         }
@@ -60,11 +61,11 @@ public class GameWorld extends World
         
                 
         word = StartWorld.stackList.pop();
-        addObject(blank, 375, 165);
+        addObject(blank, 400, 180);
         Label defLabel = new Label(StartWorld.stackDefList.pop(),20);
-        addObject(defLabel,200,300);
+        addObject(defLabel,400,320);
         Label hint = new Label("\u2665 Hint: The length of the word is " + word.length() + " letters long",20);
-        addObject(hint,365,350);
+        addObject(hint,400,380);
         
         scoreLabel = new Label("Score " + score + " / " + word.length(),30);
         addObject(scoreLabel,60,110);
@@ -122,7 +123,7 @@ public class GameWorld extends World
     }
     
     /**
-     * 
+     * Reads input of user
      * 
      */
     public void readInput()
@@ -153,10 +154,10 @@ public class GameWorld extends World
         if (inputLabel != null) {
             removeObject(inputLabel);
             inputLabel = new Label(userInput,50);
-            addObject(inputLabel,375,165);//display user input on screen
+            addObject(inputLabel,390,175);//display user input on screen
         } else {
             inputLabel = new Label(userInput,50);
-            addObject(inputLabel,375,165);//display user input on screen
+            addObject(inputLabel,390,175);//display user input on screen
         }
     }
     
@@ -220,7 +221,7 @@ public class GameWorld extends World
         findScore();
         updateInput();
         checkMark = new CheckMark();
-        addObject(checkMark, 385, 160); //add checkmark image
+        addObject(checkMark, 395, 160); //add checkmark image
         
         StartWorld.lv++; //upgrade level
         health = 10;

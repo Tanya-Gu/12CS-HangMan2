@@ -29,7 +29,7 @@ public class StartWorld extends World
     public StartWorld()
     {    
         // Create a new world with 550x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(640, 480, 1); 
         prepare();
     }
 
@@ -53,13 +53,13 @@ public class StartWorld extends World
         }
         
         proceed = new proceedButton();
-        addObject(proceed, 150, 355);
+        addObject(proceed, 150, 400);
         
         music = new musicButton();
-        addObject(music, 50, 355);
+        addObject(music, 50, 400);
         
         instructionBtn = new instructionButton();
-        addObject(instructionBtn,50,300);
+        addObject(instructionBtn,45,360);
         
         Lightning lightning1 = new Lightning();
         addObject(lightning1,75,85);
