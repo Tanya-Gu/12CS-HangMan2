@@ -15,3 +15,7 @@
   - Soundtrack Change: https://www.youtube.com/watch?v=uivFFnCI8tM 
   - Winning BGM: https://youtu.be/rSXxltE8mQE  
   - Lossing BGM: https://www.youtube.com/watch?v=lVqi13hWb00
+
+# Word and Definition Lists
+  - Words List: https://gist.githubusercontent.com/HasheeLeo/e5bd5bbc5213d25340de4809de31c52e/raw/2547c78f0a4a59b6343e87a2d98e71a44731b448/common-words.txt
+  - Definition List: https://raw.githubusercontent.com/Tanya-Gu/WordDefinition/main/WordsDefi
