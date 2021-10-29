@@ -53,10 +53,10 @@ public class StartWorld extends World
         }
         
         proceed = new proceedButton();
-        addObject(proceed, 150, 400);
+        addObject(proceed, 150, 420);
         
         music = new musicButton();
-        addObject(music, 50, 400);
+        addObject(music, 50, 420);
         
         instructionBtn = new instructionButton();
         addObject(instructionBtn,45,360);
@@ -68,9 +68,9 @@ public class StartWorld extends World
         
         bgm = new GreenfootSound("bgm.mp3");
         
-        GameWorld.health = 10;
+        GameWorld.health = 6;
         lv = 1;
-        time = 180;
+        time = 150;
         musicStatus = true;
     }
     

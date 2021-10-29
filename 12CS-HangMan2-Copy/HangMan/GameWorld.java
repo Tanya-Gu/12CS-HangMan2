@@ -83,13 +83,13 @@ public class GameWorld extends World
     {    
         timeCountDown();
         readInput();
-        if(StartWorld.lv == 15) {
+        if(StartWorld.lv == 12) {
             if(StartWorld.musicStatus) {
                 StartWorld.bgm.stop();
                 StartWorld.bgm = new GreenfootSound("finalbgm.mp3");
                 StartWorld.bgm.play();
             }
-        } else if (StartWorld.lv == 18) { //when player wins
+        } else if (StartWorld.lv == 15) { //when player wins
             if(StartWorld.musicStatus) {
                 StartWorld.bgm.stop();
                 StartWorld.bgm = new GreenfootSound("winningbgm.mp3");
@@ -221,11 +221,11 @@ public class GameWorld extends World
         findScore();
         updateInput();
         checkMark = new CheckMark();
-        addObject(checkMark, 395, 160); //add checkmark image
+        addObject(checkMark, 400, 160); //add checkmark image
         
         StartWorld.lv++; //upgrade level
-        health = 10;
-        StartWorld.time -= 20;
+        health = 6;
+        StartWorld.time -= 10;
         timeCount.setValue(StartWorld.time); 
         
         Greenfoot.delay(15);
