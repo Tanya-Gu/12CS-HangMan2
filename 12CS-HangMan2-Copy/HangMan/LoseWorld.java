@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * World that is made if the user loses the game
- * (Does not guess all the words within the time limit)
+ * (does not guess all the words within the time limit)
  * 
  * @author Tanya Gu and Marissa Abesdris
  * @version Oct 28 2021

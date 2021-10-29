@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=LoseWorld
-comment0.text=\r\n\ World\ that\ is\ made\ if\ the\ user\ loses\ the\ game\r\n\ (Does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
+comment0.text=\r\n\ World\ that\ is\ made\ if\ the\ user\ loses\ the\ game\r\n\ (does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
 comment1.params=
 comment1.target=LoseWorld()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LoseWorld.\r\n\ Adds\ all\ the\ objects\ upon\ creating\ a\ new\ world.\r\n
