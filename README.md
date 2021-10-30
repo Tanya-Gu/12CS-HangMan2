@@ -6,6 +6,7 @@
   - HangMan is a word guessing game that includes up to 18 different levels. In each of these levels, hints about the word will be given and the user need to guess the work correctly within 6 HP and limited time to proceed to the next level!
 
 # Specifics
+  - Data Structure ArrayList can be found in classes Reader and StartWorld. Stack can be found in classes StartWorld and GameWorld. HashSet can be found in class GameWorld.
   - Includes 3 different soundtracks that appears either throughout the game, when the player reaches level 15, player loses the game or player wins the game.
   - User can turn on or off the music using the music status control button at the start page
   - There is an instruction page explaining the details at the start page
