@@ -16,13 +16,13 @@ public class InstructionWorld extends World
     public InstructionWorld()
     {    
         // Create a new world with 550x400 cells with a cell size of 1x1 pixels.
-        super(550, 400, 1); 
+        super(640, 480, 1); 
         
-        Label instruction1 = new Label("1. xxxx \n 2. yyyyy", 30);
-        addObject(instruction1,70,50);
+        Label instruction1 = new Label("1. Your goal is to guess the right word \n 2. You have a limited amount of tries and time ", 30);
+        addObject(instruction1,310,50);
         
         proceed = new proceedButton();
-        addObject(proceed, 100, 355);
+        addObject(proceed, 100, 420);
     }
     
     public void act()
