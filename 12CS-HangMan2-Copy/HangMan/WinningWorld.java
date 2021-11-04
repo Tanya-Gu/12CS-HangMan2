@@ -1,8 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * World that is made if the user wins the game 
- * (Guesses all words within the time limit)
+ * WinningWorld - Displays if the player wins the game (Guessed all the words within the time limit)
  * 
  * @author Tanya Gu and Marissa Abesdris
  * @version Oct 28 2021
@@ -11,36 +10,35 @@ public class WinningWorld extends World
 {
     SimpleTimer returnTime = new SimpleTimer();
     int time = 250; //5s
-    
     instructionButton creditBtn;
-    
+    GreenfootSound bgm;
     /**
-     * Constructor for objects of class WinningWorld.
-     * Adds all the objects upon creating a new world.
-     */
-    public WinningWorld()
+     * Constructor for WinningWorld - Calls super class, initializes objects and adds them to the world.
+     * 
+     * @param bgm
+     */ 
+    public WinningWorld(GreenfootSound bgm)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(550, 400, 1); 
+        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
+        super(590, 440, 1); 
+        this.bgm = bgm;
         prepare();
     }
     
     /**
-     * Prepare the world for the game page of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepare the WinningWorld for the program - Create the initial objects and add them to the world.
      */
     private void prepare()
     {
         Label winningMsg = new Label("Thank you, \nfor saving \none's life. ", 60);
-        addObject(winningMsg,215,245);
+        addObject(winningMsg,215,240);
         
         creditBtn = new instructionButton();
-        addObject(creditBtn,50,350);
+        addObject(creditBtn,50,390);
     }
     
     /**
-     * Ends the game after a certain amount of time
-     * Checks if user has clicked on the credit button
+     * Called every act, displays the credit page if applicable
      */
     public void act()
     {    
@@ -49,6 +47,7 @@ public class WinningWorld extends World
         }
         
         if (time == 0) { 
+            bgm.stop();
             Greenfoot.stop();
         }
         
@@ -56,13 +55,13 @@ public class WinningWorld extends World
     }  
     
     /**
-     * If the user clicks on the credit button, it will take them
-     * to the credit screen
+     * If the player clicks on the credit button, the credit world will be displayed
      */
     public void showCredit()
     {    
         if (Greenfoot.mouseClicked(creditBtn)) { //if user clicked instructions button
-            Greenfoot.setWorld(new CreditWorld());
+            Greenfoot.setWorld(new CreditWorld()); //display credit world
+            Greenfoot.stop();
         }
     }
 }

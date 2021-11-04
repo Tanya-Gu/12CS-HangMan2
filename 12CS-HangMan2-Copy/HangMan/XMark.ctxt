@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=XMark
+comment0.text=\r\n\ xMark\ Class\ -\ An\ object\ that\ tells\ the\ user\ if\ they\ entered\ incorrectly\r\n\ \r\n\ @author\ Tanya\ Gu\r\n\ @version\ Oct\ 30\ 2021\r\n
+comment1.params=
+comment1.target=XMark()
+comment1.text=\r\n\ Constructor\ for\ XMark\ Class\ -\ resizes\ the\ image\r\n
+numComments=2

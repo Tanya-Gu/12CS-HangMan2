@@ -1,22 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
- * Gets image and resizes it.
+ * Blank Class - An object in which the user can click on
  * 
  * @author Tanya Gu
  * @version Oct 27 2021
  */
 public class Blank extends Actor
 {
+    /**
+     * Constructor for Blank Class - resizes the image
+     */
     public Blank()
     {
-        getImage().scale(getImage().getWidth()/3, getImage().getHeight()/3);
-    }
-    /**
-     * Act - do whatever the Blank wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        
+        getImage().scale(getImage().getWidth()/2, getImage().getHeight()/2);
     }
 }

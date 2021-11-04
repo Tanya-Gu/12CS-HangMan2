@@ -1,23 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Gets image and resizes it.
+ * CheckMark Class - An object that tells the user if they entered correctly
  * 
- * @author Tanya Gu 
+ * @author Tanya Gu
  * @version Oct 27 2021
  */
 public class CheckMark extends Actor
 {
+    /**
+     * Constructor for CheckMark Class - resizes the image
+     */
     public CheckMark()
     {
         getImage().scale(getImage().getWidth()/8, getImage().getHeight()/8);
-    }
-    /**
-     * Act - do whatever the checkMark wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        // Add your action code here.
     }
 }

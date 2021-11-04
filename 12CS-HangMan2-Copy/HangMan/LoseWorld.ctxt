@@ -1,16 +1,16 @@
 #BlueJ class context
 comment0.target=LoseWorld
-comment0.text=\r\n\ World\ that\ is\ made\ if\ the\ user\ loses\ the\ game\r\n\ (does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
-comment1.params=
-comment1.target=LoseWorld()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LoseWorld.\r\n\ Adds\ all\ the\ objects\ upon\ creating\ a\ new\ world.\r\n
+comment0.text=\r\n\ LoseWorld\ -\ Displays\ if\ the\ player\ loses\ the\ game\ (Does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
+comment1.params=word\ bgm
+comment1.target=LoseWorld(java.lang.String,\ greenfoot.GreenfootSound)
+comment1.text=\r\n\ Constructor\ for\ LoseWorld\ -\ Calls\ super\ class,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n\ \r\n\ @param\ bgm\r\n
 comment2.params=
 comment2.target=void\ prepare()
-comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ game\ page\ of\ the\ program.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment2.text=\r\n\ Prepare\ the\ LoseWorld\ for\ the\ program\ -\ Create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n
 comment3.params=
 comment3.target=void\ act()
-comment3.text=\r\n\ Ends\ the\ game\ after\ a\ certain\ amount\ of\ time\r\n\ Checks\ if\ user\ clicked\ on\ the\ credit\ button\r\n
+comment3.text=\r\n\ Called\ every\ act,\ displays\ the\ credit\ page\ if\ applicable\r\n
 comment4.params=
 comment4.target=void\ showCredit()
-comment4.text=\r\n\ If\ the\ user\ clicks\ on\ the\ credit\ button,\ it\ will\ take\ them\r\n\ to\ the\ credit\ screen\r\n
+comment4.text=\r\n\ If\ the\ player\ clicks\ on\ the\ credit\ button,\ the\ credit\ world\ will\ be\ displayed\r\n
 numComments=5

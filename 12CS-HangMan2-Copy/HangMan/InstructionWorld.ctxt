@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=InstructionWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ instructionWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=InstructionWorld()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ instructionWorld.\r\n\ \r\n
+comment0.text=\r\n\ InstructionWorld\ -\ displays\ instructions\ of\ the\ game\ to\ the\ play\r\n\ \r\n\ @author\ Tanya\ Gu\ \r\n\ @version\ Oct\ 28\ 2021\r\n
+comment1.params=time\ lv\ bgm\ musicStatus\ stackList\ stackDefList
+comment1.target=InstructionWorld(int,\ int,\ greenfoot.GreenfootSound,\ boolean,\ java.util.Stack,\ java.util.Stack)
+comment1.text=\r\n\ Constructor\ for\ InstructionWorld\ -\ Calls\ super\ class,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n\ \r\n\ @param\ time\r\n\ @param\ lv\r\n\ @param\ bgm\r\n\ @param\ musicStatus\r\n\ @param\ stackList\r\n\ @param\ stackDefList\r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ proceedGame()
-comment3.text=\r\n\ \r\n\ \r\n
+comment3.text=\r\n\ Called\ every\ act;\ changes\ to\ the\ gameWorld\ \ \r\n
 numComments=4

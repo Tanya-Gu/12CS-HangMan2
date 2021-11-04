@@ -1,8 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * World that is made if the user loses the game
- * (does not guess all the words within the time limit)
+ * LoseWorld - Displays if the player loses the game (Does not guess all the words within the time limit)
  * 
  * @author Tanya Gu and Marissa Abesdris
  * @version Oct 28 2021
@@ -11,36 +10,42 @@ public class LoseWorld extends World
 {
     SimpleTimer returnTime = new SimpleTimer();
     int time = 250; //5s
-    
     instructionButton creditBtn;
-    
+    String word;
+    GreenfootSound bgm;
     /**
-     * Constructor for objects of class LoseWorld.
-     * Adds all the objects upon creating a new world.
+     * Constructor for LoseWorld - Calls super class, initializes objects and adds them to the world.
+     * 
+     * @param bgm
      */
-    public LoseWorld()
+    public LoseWorld(String word, GreenfootSound bgm)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(550, 400, 1); 
+        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
+        super(590, 440, 1); 
+        
+        this.word = word;
+        this.bgm = bgm;
+        
         prepare();
     }
     
     /**
-     * Prepare the world for the game page of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepare the LoseWorld for the program - Create the initial objects and add them to the world.
      */
     private void prepare()
     {
-        Label answerWord = new Label("The answer word is: \n"+ GameWorld.word, 60);
-        addObject(answerWord, 280,120);
+        Label losemsg = new Label("GameOver", 70);
+        addObject(losemsg, 300,90);
+        
+        Label answerWord = new Label("The answer word is: \n"+ word, 40);
+        addObject(answerWord, 300,385);
         
         creditBtn = new instructionButton();
-        addObject(creditBtn,50,350);
+        addObject(creditBtn,50,390);
     }
     
     /**
-     * Ends the game after a certain amount of time
-     * Checks if user clicked on the credit button
+     * Called every act, displays the credit page if applicable
      */
     public void act()
     {    
@@ -49,20 +54,21 @@ public class LoseWorld extends World
         }
         
         if (time == 0) { 
+            bgm.stop();
             Greenfoot.stop();
         }
         
-        showCredit();
+        showCredit(); 
     }  
     
     /**
-     * If the user clicks on the credit button, it will take them
-     * to the credit screen
+     * If the player clicks on the credit button, the credit world will be displayed
      */
     public void showCredit()
     {    
-        if (Greenfoot.mouseClicked(creditBtn)) { //if user clicked instructions button
-            Greenfoot.setWorld(new CreditWorld());
+        if (Greenfoot.mouseClicked(creditBtn)) { //if user clicked credit button
+            Greenfoot.setWorld(new CreditWorld()); //display credit world
+            Greenfoot.stop();
         }
     }
 }

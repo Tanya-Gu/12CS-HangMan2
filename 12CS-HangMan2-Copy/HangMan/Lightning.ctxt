@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Lightning
-comment0.text=\r\n\ Gets\ image\ and\ resizes\ it.\r\n\ Changes\ image\ to\ make\ it\ disappear\ and\ reappear\r\n\ (as\ if\ it\ is\ actually\ a\ flash\ of\ lightning);\r\n\ \r\n\ @author\ Tanya\ Gu\ \r\n\ @version\ Oct\ 27\ 2021\r\n
+comment0.text=\r\n\ Lightning\ Class\ -\ Uses\ sprites\ and\ creates\ an\ animation\r\n\ \r\n\ @author\ Tanya\ Gu\r\n\ @version\ Oct\ 27\ 2021\r\n
 comment1.params=
 comment1.target=Lightning()
-comment1.text=\r\n\ Constructor\ -\ \r\n
+comment1.text=\r\n\ Constructor\ for\ Lightning\ Class\ -\ sets\ the\ image\r\n
 comment2.params=
 comment2.target=void\ act()
 numComments=3

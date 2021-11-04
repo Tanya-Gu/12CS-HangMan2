@@ -1,9 +1,7 @@
 #BlueJ class context
 comment0.target=instructionButton
-comment0.text=\r\n\ Gets\ image\ and\ resizes\ it.\r\n\ \r\n\ @author\ Tanya\ Gu\ \r\n\ @version\ Oct\ 27\ 2021\r\n
+comment0.text=\r\n\ InstructionButton\ Class\ -\ An\ object\ in\ which\ the\ user\ can\ click\ on\r\n\ \r\n\ @author\ Tanya\ Gu\r\n\ @version\ Oct\ 27\ 2021\r\n
 comment1.params=
 comment1.target=instructionButton()
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ instructionButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=3
+comment1.text=\r\n\ Constructor\ for\ InstructionButton\ Class\ -\ resizes\ the\ image\r\n
+numComments=2

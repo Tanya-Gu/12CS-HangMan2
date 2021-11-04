@@ -2,10 +2,10 @@ import java.net.*;
 import java.io.*;
 import java.util.ArrayList;
 /**
- * Write a description of class Reader here.
+ * Reader Class - Reads words and definitions from URLs
  * 
- * @Tanya Gu
- * @Oct 27 2021
+ * @author Tanya Gu
+ * @version Oct 27 2021
  */
 public class Reader  
 {
@@ -27,9 +27,9 @@ public class Reader
         URL wordsURL = new URL(url);
         BufferedReader in = new BufferedReader(
         new InputStreamReader(wordsURL.openStream()));
-        String word;
-        while ((word = in.readLine()) != null) 
-            defList.add(word);
+        String def;
+        while ((def = in.readLine()) != null) 
+            defList.add(def);
         in.close();
     }
 }
