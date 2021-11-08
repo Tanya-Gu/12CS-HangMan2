@@ -3,13 +3,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * WinningWorld - Displays if the player wins the game (Guessed all the words within the time limit)
  * 
- * @author Tanya Gu and Marissa Abesdris
+ * @author Tanya Gu and Marissa Abesdris. Cleaning stuff up done by Sherman
  * @version Oct 28 2021
  */
 public class WinningWorld extends World
 {
     SimpleTimer returnTime = new SimpleTimer();
-    int time = 250; //5s
+    int time = 400; //8s
     instructionButton creditBtn;
     GreenfootSound bgm;
     /**

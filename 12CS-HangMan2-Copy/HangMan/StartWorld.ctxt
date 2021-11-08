@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=StartWorld
-comment0.text=\r\n\ StartWorld\ -\ Includes\ a\ lightning\ animation;\ allows\ the\ player\ to\ check\ instructions,\ turn\ on\ or\ off\ the\ music\ and\ play\ the\ game\r\n\ \r\n\ @author\ Tanya\ Gu\r\n\ @version\ Oct\ 27\ 2021\r\n
+comment0.text=\r\n\ StartWorld\ -\ Includes\ a\ lightning\ animation;\ allows\ the\ player\ to\ check\ instructions,\ turn\ on\ or\ off\ the\ music\ and\ play\ the\ game\r\n\ \r\n\ @author\ Tanya\ Gu,\ testing\ +\ cleaning\ stuff\ up\ done\ by\ Sherman\r\n\ @version\ Oct\ 27\ 2021\r\n
 comment1.params=
 comment1.target=StartWorld()
 comment1.text=\r\n\ Constructor\ for\ StartWorld\ -\ Calls\ super\ class,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n

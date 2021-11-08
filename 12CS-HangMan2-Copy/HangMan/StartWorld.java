@@ -4,7 +4,7 @@ import java.util.Stack;
 /**
  * StartWorld - Includes a lightning animation; allows the player to check instructions, turn on or off the music and play the game
  * 
- * @author Tanya Gu
+ * @author Tanya Gu, testing + cleaning stuff up done by Sherman
  * @version Oct 27 2021
  */
 public class StartWorld extends World
@@ -99,7 +99,7 @@ public class StartWorld extends World
             }
         } else{
             if (musicStatus) { //if music is on
-                bgm.playLoop(); //keep playying music
+                bgm.playLoop(); //keep playing music
             }
         }
     }

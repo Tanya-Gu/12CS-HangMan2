@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * GameWorld - Allows player to play; includes an user input space, score, health, level, and timer.
  * 
- * @author Tanya Gu
+ * @author Tanya Gu, Sherman 
  * @version Oct 28 2021
  */
 public class GameWorld extends World
@@ -123,7 +123,7 @@ public class GameWorld extends World
             if(musicStatus) { //if music status is on, change to lossing bgm
                 bgm.stop();
                 bgm = new GreenfootSound("lossingbgm.mp3");
-                bgm.play();
+                bgm.playLoop();
             }
             Greenfoot.setWorld(new LoseWorld(word,bgm)); //change to lose world
         }
@@ -139,13 +139,13 @@ public class GameWorld extends World
             if(musicStatus) { //if music status is on, change to final bgm when level 15 is reached
                 bgm.stop();
                 bgm = new GreenfootSound("finalbgm.mp3");
-                bgm.play();
+                bgm.playLoop();
             }
         } else if (lv == 19) { 
             if(musicStatus) { //if music status is on, change to winning bgm when level 18 is reached
                 bgm.stop();
                 bgm = new GreenfootSound("winningbgm.mp3");
-                bgm.play();
+                bgm.playLoop();
             }
             Greenfoot.setWorld(new WinningWorld(bgm)); //change to winning world
         }

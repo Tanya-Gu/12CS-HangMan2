@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=LoseWorld
-comment0.text=\r\n\ LoseWorld\ -\ Displays\ if\ the\ player\ loses\ the\ game\ (Does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
+comment0.text=\r\n\ LoseWorld\ -\ Displays\ if\ the\ player\ loses\ the\ game\ (Does\ not\ guess\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris.\ Cleaning\ stuff\ up\ done\ by\ Sherman\r\n\ @version\ Oct\ 28\ 2021\r\n
 comment1.params=word\ bgm
 comment1.target=LoseWorld(java.lang.String,\ greenfoot.GreenfootSound)
 comment1.text=\r\n\ Constructor\ for\ LoseWorld\ -\ Calls\ super\ class,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n\ \r\n\ @param\ bgm\r\n

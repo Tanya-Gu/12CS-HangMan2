@@ -3,13 +3,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * LoseWorld - Displays if the player loses the game (Does not guess all the words within the time limit)
  * 
- * @author Tanya Gu and Marissa Abesdris
+ * @author Tanya Gu and Marissa Abesdris. Cleaning stuff up done by Sherman
  * @version Oct 28 2021
  */
 public class LoseWorld extends World
 {
     SimpleTimer returnTime = new SimpleTimer();
-    int time = 250; //5s
+    int time = 400; //8s
     instructionButton creditBtn;
     String word;
     GreenfootSound bgm;

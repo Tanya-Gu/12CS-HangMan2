@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=WinningWorld
-comment0.text=\r\n\ WinningWorld\ -\ Displays\ if\ the\ player\ wins\ the\ game\ (Guessed\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris\r\n\ @version\ Oct\ 28\ 2021\r\n
+comment0.text=\r\n\ WinningWorld\ -\ Displays\ if\ the\ player\ wins\ the\ game\ (Guessed\ all\ the\ words\ within\ the\ time\ limit)\r\n\ \r\n\ @author\ Tanya\ Gu\ and\ Marissa\ Abesdris.\ Cleaning\ stuff\ up\ done\ by\ Sherman\r\n\ @version\ Oct\ 28\ 2021\r\n
 comment1.params=bgm
 comment1.target=WinningWorld(greenfoot.GreenfootSound)
 comment1.text=\r\n\ Constructor\ for\ WinningWorld\ -\ Calls\ super\ class,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n\ \r\n\ @param\ bgm\r\n

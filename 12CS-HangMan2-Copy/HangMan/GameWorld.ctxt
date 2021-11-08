@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GameWorld
-comment0.text=\r\n\ GameWorld\ -\ Allows\ player\ to\ play;\ includes\ an\ user\ input\ space,\ score,\ health,\ level,\ and\ timer.\r\n\ \r\n\ @author\ Tanya\ Gu\r\n\ @version\ Oct\ 28\ 2021\r\n
+comment0.text=\r\n\ GameWorld\ -\ Allows\ player\ to\ play;\ includes\ an\ user\ input\ space,\ score,\ health,\ level,\ and\ timer.\r\n\ \r\n\ @author\ Tanya\ Gu,\ Sherman\ \r\n\ @version\ Oct\ 28\ 2021\r\n
 comment1.params=time\ lv\ bgm\ musicStatus\ stackList\ stackDefList
 comment1.target=GameWorld(int,\ int,\ greenfoot.GreenfootSound,\ boolean,\ java.util.Stack,\ java.util.Stack)
 comment1.text=\r\n\ Constructor\ for\ GameWorld\ -\ Calls\ super\ class,\ initializes\ objects\ and\ adds\ them\ to\ the\ world.\r\n\ \r\n\ @param\ time\r\n\ @param\ lv\r\n\ @param\ bgm\r\n\ @param\ musicStatus\r\n\ @param\ stackList\r\n\ @param\ stackDefList\r\n
