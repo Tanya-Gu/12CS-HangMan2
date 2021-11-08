@@ -46,8 +46,8 @@ public class GameWorld extends World
      */
     public GameWorld(int time,int lv, GreenfootSound bgm,boolean musicStatus,Stack<String>stackList, Stack<String>stackDefList)
     {    
-        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
-        super(590, 440, 1); 
+        // Create a new world with 800x540 cells with a cell size of 1x1 pixels.
+        super(800, 540, 1); 
         
         this.time = time;
         this.musicStatus = musicStatus;
@@ -66,7 +66,7 @@ public class GameWorld extends World
     {
         GreenfootImage gameSidePic = new GreenfootImage("gameSidePic.jpg"); //draws an image for aesthetic purpose
         gameSidePic.scale(gameSidePic.getWidth() - 470, gameSidePic.getHeight() - 470);
-        getBackground().drawImage(gameSidePic,360, 35);
+        getBackground().drawImage(gameSidePic,460, 35);
         
         if(checkMark != null) { //removes check mark from previous level if there is one
             removeObject(checkMark);
@@ -83,10 +83,10 @@ public class GameWorld extends World
                 
         word = stackList.pop();
         addObject(blank,240,210);
-        Label defLabel = new Label("\u2665 " + stackDefList.pop(),20); //pop the definition and show as a label
-        addObject(defLabel,260,380);
-        Label hint = new Label("\u2665 Hint: The length of the word is " + word.length() + " long",20); //find the length of the word and show as a label
-        addObject(hint,170,420);
+        Label defLabel = new Label("\u2665 " + stackDefList.pop(),30); //pop the definition and show as a label
+        addObject(defLabel,400,420);
+        Label hint = new Label("\u2665 Hint: The length of the word is " + word.length() + " long",30); //find the length of the word and show as a label
+        addObject(hint,400,480);
         
         scoreLabel = new Label("Score " + score + " / " + word.length(),30);
         addObject(scoreLabel,450,30);

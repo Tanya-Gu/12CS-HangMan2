@@ -27,8 +27,8 @@ public class InstructionWorld extends World
      */
     public InstructionWorld(int time,int lv,GreenfootSound bgm,boolean musicStatus,Stack<String>stackList, Stack<String>stackDefList)
     {    
-        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
-        super(590, 440, 1); 
+        // Create a new world with 800x540 cells with a cell size of 1x1 pixels.
+        super(800, 540, 1); 
         
         this.time = time;
         this.musicStatus = musicStatus;
@@ -38,20 +38,20 @@ public class InstructionWorld extends World
         this.stackDefList = stackDefList;
         
         Label instruction = new Label("Instructions: \n\n 1. Your goal is to guess the \n correct word using hints. \n\n 2. You have a limited amount of \n health(6) and time! \n\n 3. Click the paper to enter your word. ", 30);
-        addObject(instruction,300,210); //displays instruction label
+        addObject(instruction,400,290); //displays instruction label
         
         proceed = new proceedButton();
-        addObject(proceed, 510, 395);
+        addObject(proceed, 710, 495);
         
         GreenfootImage clock = new GreenfootImage("clock.png"); //draws an image for aesthetic purpose
         clock.scale(clock.getWidth() - 400, clock.getHeight() - 480);
-        getBackground().drawImage(clock,30, 140);
+        getBackground().drawImage(clock,130, 140);
         GreenfootImage paper = new GreenfootImage("userInputBackground.png"); //draws an image for aesthetic purpose
         paper.scale(paper.getWidth() - 800, paper.getHeight() - 530);
-        getBackground().drawImage(paper,470, 100);
+        getBackground().drawImage(paper,600, 100);
         GreenfootImage mouse = new GreenfootImage("mouse.png"); //draws an image for aesthetic purpose
         mouse.scale(mouse.getWidth() - 540, mouse.getHeight() - 560);
-        getBackground().drawImage(mouse,510, 150);
+        getBackground().drawImage(mouse,640, 150);
     }
     
     public void act()

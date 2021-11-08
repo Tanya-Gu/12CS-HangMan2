@@ -19,8 +19,8 @@ public class WinningWorld extends World
      */ 
     public WinningWorld(GreenfootSound bgm)
     {    
-        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
-        super(590, 440, 1); 
+        // Create a new world with 800x540 cells with a cell size of 1x1 pixels.
+        super(800, 540, 1); 
         this.bgm = bgm;
         prepare();
     }
@@ -31,10 +31,10 @@ public class WinningWorld extends World
     private void prepare()
     {
         Label winningMsg = new Label("Thank you, \nfor saving \none's life. ", 60);
-        addObject(winningMsg,215,240);
+        addObject(winningMsg,310,320);
         
         creditBtn = new instructionButton();
-        addObject(creditBtn,50,390);
+        addObject(creditBtn,50,470);
     }
     
     /**

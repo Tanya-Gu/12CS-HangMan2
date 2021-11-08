@@ -1,4 +1,4 @@
-# 12CS-HangMan2
+# P1G-HangMan
   - A HangMan word guessing game, created for our Grade 12 Computer Science mid-term project! Enjoy!:)
   - Main coding made by Tanya G. Debugging and detailng done by Sherman L. and Marissa A.
 

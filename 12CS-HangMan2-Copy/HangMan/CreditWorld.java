@@ -14,10 +14,10 @@ public class CreditWorld extends World
      */
     public CreditWorld()
     {    
-        // Create a new world with 550x400 cells with a cell size of 1x1 pixels.
-        super(590, 440, 1); 
+        // Create a new world with 800x540 cells with a cell size of 1x1 pixels.
+        super(800, 540, 1); 
         
         Label subtitleLabel = new Label("Credits \n\u27D0Sherman Leung \n\u27D0Tanya Gu \n\u27D0Marissa Abesdris", 30);
-        addObject(subtitleLabel, 305, 325);
+        addObject(subtitleLabel, 405, 280);
     }
 }

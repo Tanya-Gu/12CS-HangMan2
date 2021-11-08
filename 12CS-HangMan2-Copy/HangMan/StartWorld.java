@@ -27,8 +27,8 @@ public class StartWorld extends World
      */
     public StartWorld()
     {    
-        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
-        super(590, 440, 1); 
+        // Create a new world with 800x540 cells with a cell size of 1x1 pixels.
+        super(800, 540, 1); 
         prepare();
     }
 
@@ -50,15 +50,15 @@ public class StartWorld extends World
         }
         
         proceed = new proceedButton();
-        addObject(proceed, 150, 395);
+        addObject(proceed, 150, 495);
         
         music = new musicButton();
-        addObject(music, 50, 395);
+        addObject(music, 50, 495);
         bgm = new GreenfootSound("bgm.mp3");
         musicStatus = true;
         
         instructionBtn = new instructionButton();
-        addObject(instructionBtn,50,340);
+        addObject(instructionBtn,50,440);
         
         Lightning lightning1 = new Lightning();
         addObject(lightning1,75,85);

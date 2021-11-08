@@ -20,8 +20,8 @@ public class LoseWorld extends World
      */
     public LoseWorld(String word, GreenfootSound bgm)
     {    
-        // Create a new world with 590x440 cells with a cell size of 1x1 pixels.
-        super(590, 440, 1); 
+        // Create a new world with 800x540 cells with a cell size of 1x1 pixels.
+        super(800, 540, 1); 
         
         this.word = word;
         this.bgm = bgm;
@@ -35,13 +35,13 @@ public class LoseWorld extends World
     private void prepare()
     {
         Label losemsg = new Label("GameOver", 70);
-        addObject(losemsg, 300,90);
+        addObject(losemsg, 400,90);
         
         Label answerWord = new Label("The answer word is: \n"+ word, 40);
-        addObject(answerWord, 300,385);
+        addObject(answerWord, 400,185);
         
         creditBtn = new instructionButton();
-        addObject(creditBtn,50,390);
+        addObject(creditBtn,50,470);
     }
     
     /**
